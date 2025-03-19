@@ -26,7 +26,6 @@ document.getElementById('input-search').addEventListener('keyup',function(e){
 
 async function getUserData(userName){
     const userResponse= await getuser(userName)
-    console.log(userResponse)
     if(userResponse.message=== "Not Found"){
         screen.renderNotFound()
         return
@@ -45,18 +44,4 @@ function validadeEmpty(userName){
         return true
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
