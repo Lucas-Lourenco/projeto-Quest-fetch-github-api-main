@@ -156,6 +156,73 @@ main {
   display: none;
 }
 
+.seguidores{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  padding: 5rem; 
+  gap: 50%;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.corSeguidores{
+ 
+  background-color: rgb(231, 168, 178);
+  color: #ffffff;
+ padding: 10px 30px 10px 30px;
+ border-radius:40%;
+ margin: 50px;
+ 
+}
+
+.corSeguindo{
+ 
+  background-color: rgb(71, 21, 29);
+  color: #ffffff;
+ padding: 5px 30px 10px 30px;
+ border-radius:40%;
+ margin:50px
+
+ 
+}
+.repositoriesEvents{
+  background-color: rgb(241, 238, 234);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: auto;
+  height: auto;
+  margin: auto;
+ 
+  
+}
+
+.conjunto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+b{
+  font-weight: bold;
+}
+
+.repo-box {
+    background-color: purple;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
 @media (max-width: 1280px) {
   .container {
     flex-direction: column;
@@ -173,27 +240,78 @@ main {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 678px) {
   .container header #input-search,
   .container header #btn-search
   {
     width: 100%;
   }
+
+  .repositoriesEvents{
+    background-color: rgb(241, 238, 234);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 400px;
+    height: auto;
+    margin: auto;
+   
+    
+  }
+  .conjunto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+  }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 610px) {
   main {
-    padding: 15% 0;    
+    padding: 25% 0; 
+    margin: auto;   
   }
 
   .container .profile-data .info img{
     margin-bottom: 20px;
+   
   }
 
   .container .profile-data .info img,
   .container .profile-data .info .data
   {
-    width: 100%;
-    padding: 0;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    
+  }
+  .info{
+    text-align: center;
+    width: 45%;
+  }
+  .repositories.section{
+    width: 50%;
+  }
+  .conjunto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  .repositoriesEvents{
+    background-color: rgb(241, 238, 234);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 300px;
+    height: auto;
+    margin: auto;
+   
+    
   }
 }
